@@ -1,3 +1,0 @@
-jupyterlab>=4.2.0
-jupyterlab-link-share
-jupyter-collaboration
