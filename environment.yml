@@ -1,0 +1,25 @@
+name: jupyterlab-webrtc-docprovider-demo
+
+channels:
+  - conda-forge
+
+dependencies:
+  # runtime dependencies
+  - python >=3.9,<3.10.0a0
+  - jupyterlab >=3.1,<4.0.0a0
+  # labextension build dependencies
+  - jupyter-packaging >=0.10,<1
+  - nodejs >=16,<17
+  - pip
+  - setuptools
+  - twine
+  - wheel
+  # demo
+  - ipywidgets <8
+  - retrolab >=0.3,<0.4
+  - jupyter-server-proxy
+  # lite
+  - pkginfo
+  - doit
+  - pip:
+      - jupyterlite ==0.1.0b5
