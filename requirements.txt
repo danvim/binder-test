@@ -1,2 +1,3 @@
-jupyterlab==3.2.9
+jupyterlab>=4.2.0
 jupyterlab-link-share
+jupyter-collaboration
