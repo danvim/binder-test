@@ -1,3 +1,29 @@
 {
-  "LabApp": { "collaborative": true, "expose_app_in_browser": true }
+  "LabServerApp": {
+    "collaborative": true
+  },
+  "ServerProxy": {
+    "servers": {
+      "lite": {
+        "command": [
+          "python",
+          "-m",
+          "jupyter",
+          "lite",
+          "serve",
+          "--port",
+          "{port}",
+          "--lite-dir",
+          "./binder",
+          "--contents",
+          "./binder"
+        ],
+        "launcher_entry": {
+          "path_info": "./lite/lab/index.html?path=README.md",
+          "title": "JupterLite"
+        },
+        "timeout": 60
+      }
+    }
+  }
 }
